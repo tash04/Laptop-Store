@@ -1,0 +1,310 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    width: 100%;
+
+    height: 100vh;
+
+    background: url('https://images.all-free-download.com/images/graphicwebp/abstract_white_background_266417.webp');
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+
+.btn {
+
+    width: 50px;
+
+    height: 50px;
+
+    background: #fff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 2.5rem;
+
+    color:#000;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left:25px;
+
+    z-index: 100;
+
+    bottom: 25px;
+
+    cursor: pointer;
+
+}
+
+.bg {
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.bg .fan {
+
+    width: 500px;
+
+    height: 500px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background:linear-gradient( to right top ,#00FF83,#FF60FF,#00AEFF,#FFF572) ;
+
+    animation: rotateEl 1s linear reverse infinite;
+
+    transform: rotate(0deg);
+
+}
+
+.bg .fan .center {
+
+    width: 460px;
+
+    height: 460px;
+
+    background:#000;
+
+    border-radius: 50%;
+
+    opacity: 0.8;
+
+}
+
+.bg .fan:first-child {
+
+    width: 400px;
+
+    height: 400px;
+
+    margin-right: -80px;
+
+}
+
+.bg .fan:first-child .center {
+
+    width: 360px;
+
+    height: 360px;
+
+}
+
+.bg .fan:last-child {
+
+    width: 400px;
+
+    height: 400px;
+
+    margin-left: -80px;
+
+    z-index: -1;
+
+}
+
+.bg .fan:last-child .center {
+
+    width: 360px;
+
+    height: 360px;
+
+}
+
+@keyframes rotateEl {
+
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+    transform: rotate(360deg);
+
+    }
+
+}
+
+.overlay {
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(0,0,0,1);
+
+    position: absolute;
+
+    top:0;
+
+    transition: 0.3s;
+
+}
+
+.overlay-on {
+
+    background: rgba(0,0,0,0.5);
+
+}
+
+.overlay h1 {
+
+    font-size: 5rem;
+
+    color:#fff;
+
+    text-transform: uppercase;
+
+    font-family: demonized;
+
+    opacity: 0;
+
+    transition: 0.3s;
+
+}
+
+.overlay .show {
+
+    opacity: 1;
+
+}
+
+section {
+
+    width: 100%;
+
+    height: 200vh;
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+    margin: 0 auto;
+
+    background: #fff;
+
+    flex-wrap: wrap;
+
+    font-family: quicksand;
+
+}
+
+section .card {
+
+    width: 25%;
+
+    height: 30%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    margin: 25px;
+
+    padding: 10px 0 0 0;
+
+    background-color: #BBDEFB;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px -10px rgba(0,0,0,0.5);
+
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 70%;
+
+}
+
+.card .info {
+
+    width:100%;
+
+    height: auto;
+
+    padding: 15px;
+
+}
+
+.card .buy {
+
+    width: 100%;
+
+    padding: 15px 0;
+
+    border:none;
+
+    outline: none;
+
+    font-size: 1.05rem;
+
+    color: #fff;
+
+    background-color: #2196F3;
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    background-color: #FFCDD2;
+
+    box-shadow: 0 25px 50px -20px rgba(0,0,0,0.5);
+
+}
+
+.card .buy:hover {
+
+    background-color: #F44336;
+
+}
+
